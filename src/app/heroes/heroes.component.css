@@ -1,0 +1,36 @@
+/* Общий стиль страницы */
+.container {
+  width: 100%;
+  padding: 20px;             /* Отступ от края страницы */
+  box-sizing: border-box;     /* Учитываем отступы в ширину контейнера */
+}
+
+/* Стиль для заголовка */
+.page-title {
+  text-align: center;         /* Центрирование заголовка */
+  margin-bottom: 20px;        /* Отступ снизу, чтобы отделить от карточек */
+}
+
+/* Стиль для контейнера карточек */
+.heroes-list {
+  display: flex;
+  flex-direction: column;     /* Вертикальное расположение карточек */
+  align-items: center;        /* Центрируем карточки по горизонтали */
+  padding: 0 15px;            /* Горизонтальный отступ для карточек */
+}
+
+/* Стиль для каждой карточки */
+.hero-card {
+  width: 300px;               /* Ширина карточки */
+  margin: 10px 0;             /* Отступ сверху и снизу между карточками */
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.hero-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

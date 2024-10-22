@@ -1,0 +1,9 @@
+<div class="container">
+  <h1 class="page-title">Герои России</h1>
+  <div class="heroes-list">
+  <div class="hero-card" *ngFor="let hero of heroes" (click)="goToHeroDetail(hero.id)">
+    <h3>{{ hero.name }}</h3>
+    <p>{{ hero.description }}</p>
+  </div>
+  </div>
+</div>
